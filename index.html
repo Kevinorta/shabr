@@ -2,47 +2,104 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Title</title>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Title</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
-    <!--custom-->
-    <link rel="stylesheet" href="custom.css">
-    <link rel="stylesheet" href="nav.css">
-    <script src="script.js"></script>
-    <style type="text/css">
-       html, body {
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+  <!--custom-->
+  <link rel="stylesheet" href="custom.css">
+  <link rel="stylesheet" href="nav.css">
+  <script src="script.js"></script>
+  <style type="text/css">
+    html,
+    body {
       height: 100%;
-      background-color:#4db8ff
+      background-color: #4db8ff;
     }
-
-    .full-w{
-      width:100%;
+    
+    .full-w {
+      width: 100%;
     }
+    
     .full-h {
       height: 100%;
     }
-    
-    img{
-      width:100%;
-      height:100%;
+    .full-h2 {
+      height: 25%;
     }
-    </style>
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    
+    .sec2 {
+      background-color:#326504;
+   
+    }
+    
+    .sec1 {
+      position: fixed;
+      text-align: center;
+    }
+    
+    h1 {
+      position: inline-block;
+      text-align: left;
+    }
+    
+    .sec1 {
+      /* fixed position a zero-height full width container */
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 0;
+      /* center all inline content */
+      text-align: center;
+    }
+    
+    .sec1 > h1 {
+      /* make the block inline */
+      display: inline-block;
+      /* reset container's center alignment */
+      text-align: left;
+    }
+    #balloonMove{
+      width:200px;
+      height:200px;
+      background-color:red;
+      position:absolute;
+      z-index:-1;
+    }
+  </style>
 </head>
+
 <body>
-    <div class="full-w full-h" id="fs1">
+  <div class="full-w full-h" id="fs1">
     <div class="vert-center text-center">
-      <h1>fs1</h1>
+      <div class="sec1">
+        <h1>SKY DANCE HOT AIR BALLOON RIDES</h1>
+        <div id="balloonMove">
+          
+        </div>
+      </div>
     </div>
   </div>
-  <div class="full-w full-h">
+  <div class="full-w full-h2" id="fs1">
+    <div class="vert-center text-center">
+      
+    </div>
     
+  </div>
+  <img src="img/grass.png" alt="damn" style="width:100%;height:5%;">
+  <div class="full-w full-h sec2">
+
   </div>
 </body>
 
