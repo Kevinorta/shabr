@@ -20,7 +20,7 @@
     html,
     body {
       height: 100%;
-      background-color: #4db8ff;
+      background-color: #75D3FF;
     }
     
     .full-w {
@@ -30,17 +30,26 @@
     .full-h {
       height: 100%;
     }
+    
     .full-h2 {
       height: 25%;
     }
+    
     img {
       width: 100%;
       height: 100%;
     }
     
     .sec2 {
-      background-color:#326504;
-   
+      background-color: #66A630;
+      background: -webkit-linear-gradient(#327F00, #FFED2B);
+      /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(#327F00, #FFED2B);
+      /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(#327F00, #FFED2B);
+      /* For Firefox 3.6 to 15 */
+      background: linear-gradient(#327F00, #FFED2B);
+      /* Standard syntax */
     }
     
     .sec1 {
@@ -70,33 +79,35 @@
       /* reset container's center alignment */
       text-align: left;
     }
-    #balloonMove{
-      width:200px;
-      height:200px;
-      background-color:red;
-      position:absolute;
-      z-index:-1;
+    
+    #balloonMove {
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      position: absolute;
+      z-index: -1;
     }
-    .navbar-brand{
-      font-family:Comic Sans MS;
+    .sec2{
+      height:400%;
     }
+    .navbar-brand {}
   </style>
 </head>
 
 <body>
   <div class="full-w full-h" id="fs1">
-    
+
     <div class="vert-center text-center">
-      
+
       <div class="sec1">
-              <nav class="navbar navbar-inverse">
-                <div class="container-fluid"> </div>
-                  <div class="navbar-header">hstat llc</div>
-                  <div class="navbar-brand"></div>
-</nav>
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid"> </div>
+          <div class="navbar-header"></div>
+          <div class="navbar-brand"></div>
+        </nav>
         <h1>SKY DANCE HOT AIR BALLOON RIDES</h1>
         <div id="balloonMove">
-          
+
         </div>
       </div>
     </div>
@@ -105,11 +116,11 @@
     <div class="vert-center text-center">
 
     </div>
-    
+
   </div>
   <img src="img/grass.png" alt="damn" style="width:100%;height:5%;">
-  <div class="full-w full-h sec2">
-    
+  <div class="sec2">
+
   </div>
 </body>
 
