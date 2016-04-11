@@ -17,114 +17,101 @@
   <!--custom-->
   <link rel="stylesheet" href="custom.css">
   <link rel="stylesheet" href="nav.css">
-  <script src="script.js">
-    $(document).ready(function() {
-      var top = offset.top;
-      var link = $("balloonMove");
-      var bottom = $(window).height() - top - link.height();
-      
-    });
-  </script>
-  <style type="text/css">
-    html,
-    body {
-      height: 100%;
-      background-color: #75D3FF;
-    }
-    
-    .full-w {
-      width: 100%;
-    }
-    
-    .full-h {
-      height: 100%;
-    }
-    
-    img {
-      width: 100%;
-      height: 100%;
-    }
-    
-    .sec2 {
-      background-color: #66A630;
-      background: -webkit-linear-gradient(#327F00, #FFED2B);
-      /* For Safari 5.1 to 6.0 */
-      background: -o-linear-gradient(#327F00, #FFED2B);
-      /* For Opera 11.1 to 12.0 */
-      background: -moz-linear-gradient(#327F00, #FFED2B);
-      /* For Firefox 3.6 to 15 */
-      background: linear-gradient(#327F00, #FFED2B);
-      /* Standard syntax */
-    }
-    
-    .sec1 {
-      position: fixed;
-      text-align: center;
-    }
-    
-    h1 {
-      position: inline-block;
-      text-align: left;
-    }
-    
-    .sec1 {
-      /* fixed position a zero-height full width container */
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 0;
-      /* center all inline content */
-      text-align: center;
-    }
-    
-    .sec1 > h1 {
-      /* make the block inline */
-      display: inline-block;
-      /* reset container's center alignment */
-      text-align: left;
-    }
-    
-    #balloonMove {
-      width: 200px;
-      height: 200px;
-      background-color: red;
-      position: absolute;
-      z-index: -1;
-    }
-    
-    .sec2 {
-      height: 400%;
-    }
-  </style>
+  <script src="script.js"></script>
 </head>
 
 <body>
 
 
-  <div class="full-w full-h" id="fs1">
-
-    <div class="vert-center text-center">
-
-      <div class="sec1">
-
-
-        <h1>SKY DANCE HOT AIR BALLOON RIDES</h1>
-        <div id="balloonMove">
-
+  <div class="container main" id="main">
+    <div id="overlay">
+      <div class="text-center" class="row">
+        <h1>SKYDANCE HOT AIR BALLOON RIDES</h1>
+      </div>
+      <br>
+      <div class="row text-center">
+        <div class="col-sm-4">
+          <h2>Ride with the wind.</h2>
+        </div>
+        <div class="col-sm-4 center-block">
+          <img class="img-responsive" src="img/hot-air-balloon-clipart.png">
+        </div>
+        <div class="col-sm-4">
+          <h2>Dance with the sky.</h2>
         </div>
       </div>
     </div>
+
   </div>
 
-  <img src="img/grass.png" alt="damn" style="width:100%;height:5%;">
-  <div class="sec2">
-
-    <div class="col-sm-6">
-      <h2 class="text-center">Ride with the wind</h2>
+  <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+    <div class="container">
+      <div class="navbar-header">
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="#main" class="navbar-brand">Bootstrap 3 Menu Generator</a>
+      </div>
+      <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li><a href="#">Separated link</a></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Components</a>
+          </li>
+          <li>
+            <a href="#">JavaScript</a>
+          </li>
+          <li class="active">
+            <a href="#">Customize</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <div class="col-sm-6">
-      <h2 class="text-center">Dance with the sky</h2>
+  </header>
+  <!--^^^nav^^^-->
+  <div id="grassImg"></div>
+  <div class="container-fluid contentMain">
+    <div class="row">
+      <div class="jumbotron" id="home">
+        <h2 class="text-center">Fun for Everyone</h2>
+        <h3 class="text-center"> Come make a new memory with us. There's nothing else like it.
+Fun for both adults and kids. All are welcome!
+Afraid of heights? You won't be after you slow-dance with the sky.</h3>
+      </div>
+    </div>
+
+    <div class="jumbotron row text-center">
+      <div class="col-sm-6">
+        <h2>Time</h2>
+        <h3>Due to climatic conditions, we can safely fly only in the early morning hours with our primary season and most beautiful months being May through November. Since our launch times vary through the seasons, we ask all our guests to call ahead for the exact meeting time.</h3>
+      </div>
+      <div class="col-sm-6">
+        <h2>Weather</h2>
+        <h3>High winds and/or inclement weather prevent us from flying. We ask all our guests to contact us in the early afternoon prior to their scheduled flight between 12:00 noon and 2:00 p.m. to verify that the forecasted weather conditions will allow their balloon flight.</h3>
+      </div>
+      <div class="col-sm-6">
+        <h2>Flight</h2>
+        <h3>Our actual flight time is approximately one to one and a half hours averaging closer to one and a half hours and we suggest to allow three to three and a half hours for the entire adventure.</h3>
+      </div>
+      <div class="col-sm-6">
+        <h2>Participation</h2>
+        <h3>We encourage all of our guests, if they wish, to participate in both the inflation and deflation of the balloon. We have found it adds greatly</h3>
+      </div>
     </div>
 
   </div>

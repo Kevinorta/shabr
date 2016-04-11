@@ -1,3 +1,38 @@
-.green{
-    background-color: #456432;
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #75D3FF;
+}
+
+.main {
+    padding-top:7%;
+    display: table;
+    width: 100%;
+    height: 125%;
+}
+#grassImg{
+    width:100%;
+    height:50px;/*change size*/
+    background-image: url('img/grass.png');
+    background-size:500px 50px; /*change size*/
+    background-repeat: repeat-x;
+}
+.contentMain{
+   
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#327F00, yellow); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#327F00, yellow); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#327F00, yellow); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#327F00, yellow); /* Standard syntax */
+}
+.jumbotron{
+    
+    background-color: rgba(66, 139, 202, 0.35);
+    margin:2%;
+    margin-top:5%;
+    
 }
