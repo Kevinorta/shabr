@@ -36,3 +36,7 @@ body {
     margin-top:5%;
     
 }
+
+.img-responsive {
+    margin: 0 auto;
+}
