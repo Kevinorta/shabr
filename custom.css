@@ -36,7 +36,13 @@ body {
     margin-top:5%;
     
 }
+<<<<<<< HEAD
 .bigBalloon{
     
     width:65%;
+=======
+
+.img-responsive {
+    margin: 0 auto;
+>>>>>>> 6d0914a83b5454be7406454bc29c99d457376e3c
 }
